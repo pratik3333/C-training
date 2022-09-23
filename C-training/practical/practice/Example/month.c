@@ -67,7 +67,6 @@ int main(int argc, char const *argv[])
     
     default:
     printf("Invalid input! please enter month number between 1-12.");
-        break;
     }
 
     return 0;
