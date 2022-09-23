@@ -20,6 +20,7 @@
 // T is the time span
 
 #include <stdio.h>
+#include <math.h>
 int main(int argc, char const *argv[])
 {
     float a,b,c;
@@ -36,7 +37,7 @@ int main(int argc, char const *argv[])
 
     //    CI=p(1+(R/100))^T
 
-     CI=(a(1+(c/100))^b);
+     CI=a*pow((1+c/100),b);
      printf("Compound Interest = %f",CI);
                 
     return 0;
