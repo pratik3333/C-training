@@ -1,3 +1,5 @@
+// write a program to print numbers from 1 to 100
+
 #include <stdio.h>
 int main(int argc, char const *argv[])
 {
