@@ -1,3 +1,5 @@
+// write a program to print all odd numbers up to n
+
 #include <stdio.h>
 int main(int argc, char const *argv[])
 {
