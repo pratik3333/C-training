@@ -1,7 +1,7 @@
 // write a program to print all alphabets from A to Z capital and small
 
 #include <stdio.h>
-int main(int argc, char const *argv[])
+int main()
 {
      char cha='a';
     int ch = 65;
@@ -21,9 +21,5 @@ int main(int argc, char const *argv[])
         ch++;
     }
     
-    
-    
-    
-
     return 0;
 }
