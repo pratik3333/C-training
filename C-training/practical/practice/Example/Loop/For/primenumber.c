@@ -3,24 +3,25 @@
 #include <stdio.h>
 int main(int argc, char const *argv[])
 {
-    int i=2,no,m=0,flag=0;
+    int no,i,flag=0;
     printf("Enter the number: ");
     scanf("%d",&no);
-    m=no/2;
 
-    for (; i <= m; i++)
+    for ( i = 2; no/2; i++)
     {
         if (no%i==0)
         {
             flag=1;
             break;
         }
-
         
     }
-    if (flag==0)
+    if (flag==1)
     {
-        printf("%d",i);
+        printf("Not prime number.");
+    }
+    else{
+        printf("Prime number.");
     }
     
     return 0;
