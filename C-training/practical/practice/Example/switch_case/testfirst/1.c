@@ -1,3 +1,5 @@
+// write a program to accept a character from user and convert it to upper/lower case
+
 #include <stdio.h>
 int main(int argc, char const *argv[])
 {
