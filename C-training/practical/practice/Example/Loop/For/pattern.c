@@ -5,7 +5,7 @@ int main(int argc, char const *argv[])
 
     for ( i = 1; i <=5; i++)
     {
-        for ( j = 5; j >=1; j--)
+        for ( j = 1; j <=5; j++)
         {
             printf("\t$");
         }
