@@ -1,5 +1,4 @@
-// write a program to print all prime numbers between 1 to n 
-
+// write a program to print number is prime number or not.
 #include <stdio.h>
 int main(int argc, char const *argv[])
 {
