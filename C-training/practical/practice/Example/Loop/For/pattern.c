@@ -7,7 +7,7 @@ int main(int argc, char const *argv[])
     {
         for ( j = 1; j <=5; j++)
         {
-            printf("\t$");
+            printf("\t*");
         }
         
         printf("\n");
