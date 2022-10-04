@@ -18,3 +18,11 @@ int main(int argc, char const *argv[])
 
     return 0;
 }
+
+// output:-
+
+// 12345
+//  2345
+//   345
+//    45
+//     5
