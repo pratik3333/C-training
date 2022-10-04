@@ -7,7 +7,7 @@ int main(int argc, char const *argv[])
     {
         for ( j = 1; j<=10; j++)
         {
-            if (i<=j || j-1)
+            if (i<=j)
             {
                 printf("*");
             }
