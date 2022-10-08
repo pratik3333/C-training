@@ -27,3 +27,12 @@ int main(int argc, char const *argv[])
     
     return 0;
 }
+
+
+
+// output:-
+// 12345
+// 2  5
+// 3 5
+// 45
+// 5
