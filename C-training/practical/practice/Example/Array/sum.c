@@ -1,3 +1,5 @@
+// write a program input 5 values in array and calculate it's sum
+
 #include <stdio.h>
 int main(int argc, char const *argv[])
 {
