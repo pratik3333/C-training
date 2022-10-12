@@ -10,7 +10,7 @@ int main(int argc, char const *argv[])
         scanf("%d",&a[i]);
     }
 
-    printf("five values of array");
+    printf("five values of array: ");
     for ( i = 0; i <5; i++)
     {
 
