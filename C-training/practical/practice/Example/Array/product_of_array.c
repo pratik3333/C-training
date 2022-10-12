@@ -16,6 +16,6 @@ int main(int argc, char const *argv[])
         mul=mul*a[i];
     }
     
-    printf("Multiplication of all elements of array:%d",mul);
+    printf("Multiplication of all elements of array: %d",mul);
     return 0;
 }
