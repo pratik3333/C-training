@@ -1,4 +1,4 @@
-// Write a program input the 5 values in array and reverse it.
+// Write a program input the 5 values in array and arrange in ascending order.
 
 #include <stdio.h>
 int main(int argc, char const *argv[])
@@ -28,7 +28,7 @@ int main(int argc, char const *argv[])
             }
             
         }
-        printf("\n Display the array after sorting");
+        printf("\n Display the array after sorting:");
         for ( i = 0; i <5; i++)
         {
             printf(" %d",a[i]);
