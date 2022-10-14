@@ -15,12 +15,12 @@ int main(int argc, char const *argv[])
     for ( i = 3; i <n; i++)
     {
         t1=t2;
-        t2=nextterm;
+        t2=nextterm ;
         nextterm=t1+t2;
 
         
     }
-    printf("%d",temp);
+    printf("%d",nextterm);
     
     return 0;
 }
