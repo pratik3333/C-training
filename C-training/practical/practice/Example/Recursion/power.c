@@ -20,5 +20,6 @@ int main(int argc, char const *argv[])
     scanf("%d%d", &base,&index);
     int result = power(base, index);
     printf("\n power is %d\n", result);
+    
     return 0;
 }
