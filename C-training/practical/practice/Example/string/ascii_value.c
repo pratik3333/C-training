@@ -13,7 +13,7 @@ int main(int argc, char const *argv[])
     {
         if (ch>='a' && ch<='z')
         {
-            printf("hello");
+            
         }
         printf(" %d",ch);
     }
