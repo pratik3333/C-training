@@ -20,21 +20,21 @@ int main()
 
    switch (op)
    {
-   case '1':
+   case 1:
     add=first+second;
-    printf("The addition of two number is%f: ",add);
+    printf("The addition of two number is %f: ",add);
     break;
 
-    case '2':
-    printf("The substraction of two number is%f: ",first-second);
+    case 2:
+    printf("The substraction of two number is %f: ",first-second);
     break;
 
-    case '3':
-    printf("The multilpication of two number is%f: ",first*second);
+    case 3:
+    printf("The multilpication of two number is %f: ",first*second);
     break;
 
-    case '4':
-    printf("The division of two number is%f : ",first/second);
+    case 4:
+    printf("The division of two number is %f : ",first/second);
     break;
 
    default:
