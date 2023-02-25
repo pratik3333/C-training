@@ -20,6 +20,7 @@ int main()
 
    switch (op)
    {
+<<<<<<< HEAD
    case 1:
     add=first+second;
     printf("The addition of two number is %f: ",add);
@@ -35,6 +36,23 @@ int main()
 
     case 4:
     printf("The division of two number is %f : ",first/second);
+=======
+   case '1':
+    add=first+second;
+    printf("The addition of two number is%f: ",add);
+    break;
+
+    case '2':
+    printf("The substraction of two number is%f: ",first-second);
+    break;
+
+    case '3':
+    printf("The multilpication of two number is%f: ",first*second);
+    break;
+
+    case '4':
+    printf("The division of two number is%f : ",first/second);
+>>>>>>> f2d17e1995b86e5cd4b6fd1d1ca7b3883fd6e34b
     break;
 
    default:
