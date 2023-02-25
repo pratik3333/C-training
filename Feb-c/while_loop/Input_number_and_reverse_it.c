@@ -14,6 +14,7 @@ int main()
 
         no=no/10;
 
+
     }
     
     return 0;
