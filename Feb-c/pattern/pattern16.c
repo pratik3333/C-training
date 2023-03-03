@@ -29,3 +29,10 @@ void main()
     }
     return 0;
 }
+
+// ans=
+// ABCDE
+// 1234
+// ABC
+// 12
+// A
