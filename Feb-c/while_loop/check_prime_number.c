@@ -8,7 +8,7 @@ int main()
     scanf("%d",&no);
 
     
-flag=1;
+    flag=1;
      for(i=2;i<=no/2;i++)
      {
         if (no%i==0)

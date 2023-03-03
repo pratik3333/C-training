@@ -3,9 +3,9 @@ int main()
     
 {
     int no;
-    int char;
+    char ch;
     printf("Enter 1 for checking alphbet is vowel or consonant");
-    scanf("c",&char);
+    scanf("c",&ch);
     
     printf("Enter 2 for checking number is positive negative or zero");
     printf("Enter 3 for checking greatest among three numbers ");
