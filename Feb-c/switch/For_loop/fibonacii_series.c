@@ -1,7 +1,6 @@
 #include<stdio.h>
 int main()
 {
-<<<<<<< HEAD
     int no,a=0,b=1,c;
     printf("Enter the number: ");
     scanf("%d",&no);
@@ -15,7 +14,4 @@ int main()
 
     }
     return 0;
-=======
-    int no,
->>>>>>> master
 }

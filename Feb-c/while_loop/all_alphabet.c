@@ -2,14 +2,20 @@
 
 int main()
 {
-    char ch='a';
+    // char ch='a';
 
-    printf("alphabet from a to z are: ");
+    // printf("alphabet from a to z are: ");
 
-    while (ch<='z')
+    // while (ch<='z')
+    // {
+    //     printf("%c\n",ch);
+    //     ch++;
+    // }
+    
+    char i,j;
+    for ( i = 'a'; i <='z'; i++)
     {
-        printf("%c\n",ch);
-        ch++;
+        printf("%c\n",i);
     }
     
 
