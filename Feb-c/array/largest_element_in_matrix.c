@@ -39,7 +39,20 @@ void main()
         }
         
     }
-    printf("Maximum value of the given matrix is: %d",max);
+
+    printf("\nMaximum value of the given matrix is: %d",max);
+    for ( i = 0; i <3; i++)
+    {
+        for ( j = 0; j <3; j++)
+        {
+            if (max==a[i][j])
+            {
+                printf("\nrow=%d column=%d",i,j);
+            }
+            
+        }
+        
+    }
 
 
 }

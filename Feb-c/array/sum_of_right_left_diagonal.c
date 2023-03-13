@@ -1,20 +1,18 @@
-// WAP to 3*3 matrix find the repeatative element and display its position
 #include<stdio.h>
 void main()
 {
-    int a[3][3],i,j,count=0,repeat;
-
-    printf("Enter the matrix values: ");
+    int a[3][3],i,j,rdiag,ldiag;
+    printf("Enter the matrix: ");
     for ( i = 0; i <3; i++)
     {
-        for ( j = 0; j < 3; j++)
+        for ( j = 0; j <3; j++)
         {
             scanf("%d",&a[i][j]);
         }
         
     }
-    
-    printf("\nDisplay the matrix: \n");
+
+    printf("\ndisplay the matrix: \n");
     for ( i = 0; i <3; i++)
     {
         for ( j = 0; j <3; j++)
@@ -24,21 +22,24 @@ void main()
         printf("\n");
     }
     
-    repeat=a[0][0];
     for ( i = 0; i <3; i++)
     {
         for ( j = 0; j <3; j++)
         {
-            
-            if (repeat==a[i][j])
+            if (j==2-i)
             {
-            
-                count++;
+                rdiag=rdiag+a[i][j];
+            }
+            if (i==j)
+            {
+                ldiag=ldiag+a[i][j];
             }
             
         }
         
     }
-    printf("repeatative element is %d",repeat);
-    printf("repeatative element is %d",count);
+
+    printf("The sum of right diagonal is : %d",rdiag);
+    printf("The sum of right diagonal is : %d",ldiag);
+    
 }
