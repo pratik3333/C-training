@@ -1,7 +1,8 @@
+// WAP to calculate the sum of left and right diagonal element of matrix and create matrix of size 3 x 3
 #include<stdio.h>
 void main()
 {
-    int a[3][3],i,j,rdiag,ldiag;
+    int a[3][3],i,j,rdiag=0,ldiag=0;
     printf("Enter the matrix: ");
     for ( i = 0; i <3; i++)
     {
@@ -10,16 +11,6 @@ void main()
             scanf("%d",&a[i][j]);
         }
         
-    }
-
-    printf("\ndisplay the matrix: \n");
-    for ( i = 0; i <3; i++)
-    {
-        for ( j = 0; j <3; j++)
-        {
-            printf("\t%d",a[i][j]);
-        }
-        printf("\n");
     }
     
     for ( i = 0; i <3; i++)
@@ -34,14 +25,14 @@ void main()
             {
                 ldiag=ldiag+a[i][j];
             }
-            
+            printf("\t%d",a[i][j]);
         }
-        
+        printf("\n");
     }
 
-    
 
-    printf("The sum of right diagonal is : %d",rdiag);
-    printf("The sum of right diagonal is : %d",ldiag);
+
+    printf("\nThe sum of right diagonal is : %d",rdiag);
+    printf("\nThe sum of right diagonal is : %d",ldiag);
     
 }
