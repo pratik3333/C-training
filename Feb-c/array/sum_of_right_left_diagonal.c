@@ -39,6 +39,8 @@ void main()
         
     }
 
+    
+
     printf("The sum of right diagonal is : %d",rdiag);
     printf("The sum of right diagonal is : %d",ldiag);
     
