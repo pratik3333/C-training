@@ -14,40 +14,29 @@ void main()
         }
         
     }
-    printf("Enter the second array: ");
-    for ( i = 0; i <3; i++)
-    {
-        for ( j = 0; j< 3; j++)
-        {
-            scanf("%d",&b[i][j]);
-        }
-        
-    }
-    
-    
-    a[i][j]=b[3][3];
 
-    printf("Display The array: \n");
+    printf("Display The first array: \n");
     for ( i = 0; i <3; i++)
     {
         for ( j = 0; j< 3; j++)
         {
+            b[i][j]=a[i][j];
             printf("\t%d",a[i][j]);
         }
         printf("\n");
     }
-
-    printf("Display The array: \n");
+    
+    printf("Display The copied array: \n");
     for ( i = 0; i <3; i++)
     {
         for ( j = 0; j< 3; j++)
         {
-            printf("\t%d",a[i][j]);
+            printf("\t%d",b[i][j]);
         }
         printf("\n");
     }
 
-
+    printf("\nmultiplication of matrix is:\n");
     for ( i = 0; i <3; i++)
     {
         for ( j = 0; j <3; j++)
@@ -57,15 +46,8 @@ void main()
             {
                 sum=sum + a[i][k] * b[k][j];
             }    
+            printf("\t%d",sum);
         } 
-    }
-    
-    for ( i = 0; i <3; i++)
-    {
-        for ( j = 0; j <3; j++)
-        {
-            printf("\t%d",c[i][j]);
-        }
         printf("\n");
     }
     

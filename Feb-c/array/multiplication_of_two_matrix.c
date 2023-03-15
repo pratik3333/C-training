@@ -3,7 +3,7 @@
 #include<stdio.h>
 void main()
 {
-    int a[3][3],b[3][3],c[3][3],i,j;
+    int a[3][3],b[3][3],c[3][3],i,j,k,sum;
 
     printf("First array values: \n");
     for ( i = 0; i <3; i++)
@@ -44,31 +44,21 @@ void main()
         printf("\n");
     }
     
-    // logic for Multiplication of two matrix
-    
-    for ( i = 0; i < 3; i++)
-    {
-        for ( j = 0; j<3; j++)
-        {
-            c[i][j]=a[i][j] * b[i][j];
-        }
-        
-    }
-
-    // printing the resultant matrix
-    printf("\nMultiplication of two matrix: \n");
+    // logic for Multiplication of two matrix.
+    printf("\nMultiplication of two matrix is: \n");
     for ( i = 0; i <3; i++)
     {
         for ( j = 0; j <3; j++)
         {
-            printf("\t%d",c[i][j]);
+            sum=0;
+            for ( k = 0; k <3; k++)
+            {
+                sum=sum + a[i][k] * b[k][j];
+            }
+            printf("\t%d",sum);
         }
         printf("\n");
-        
     }
-    
-
-    
     
     
 }
