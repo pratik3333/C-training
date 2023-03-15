@@ -55,7 +55,7 @@ void main()
             sum=0;
             for ( k = 0; k <3; k++)
             {
-                sum=sum + a[i][k] * b[k][k];
+                sum=sum + a[i][k] * b[k][j];
             }    
         } 
     }
