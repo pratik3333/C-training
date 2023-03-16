@@ -19,6 +19,7 @@ void main()
     printf("\nReverse array: \n");
     for ( i =a[5]; i >0 ; i--)
     {
+        
         printf("\t%d ",a[i]);
     }
     
