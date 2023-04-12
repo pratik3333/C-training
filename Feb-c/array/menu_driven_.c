@@ -43,6 +43,7 @@ void main()
         {
             printf("%d\t", a[i]);
         }
+        break;
 
     case 3:
         printf("\nEnter position that where you want to: \n");
@@ -68,8 +69,15 @@ void main()
         {
             printf("%d\t", a[i]);
         }
-
     case 5:
-        
+       printf("\nEnter the index: ");
+       scanf("%d\t",&a[no]);
+
+       a[no]=a[i];
+       for ( i = 5; i > 0; i--)
+       {
+          printf("%d\t",a[i]);
+       }
+       
     }
 }
