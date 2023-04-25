@@ -22,8 +22,6 @@ void main()
     for (i = 0; i < 5; i++)
     {
         
-
-        
         
         // flag = 0;
         // for (int j = 2; j < a[i]; j++)
