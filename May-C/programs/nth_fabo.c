@@ -2,26 +2,18 @@
 #include<conio.h>
 void main()
 {
-    int i,j;
-    char ch='a';
+    int i,no,sum=0,a=0,b=1;
+    printf("Enter the number: ");
+    scanf("%d",&no);
 
-    for ( i = 1; i <=5; i++)
+    for ( i = 3; i <=no; i++)
     {
-        for ( j = i; j <=5; j++)
-        {
-            if (j>=i)
-            {
-                printf(" ");
+        sum=a+b;
+        a=b;
+        b=sum;
 
-            }
-            else
-            {
-                printf("%c",ch);
-            }
-            
-        }
-        printf('\n');
-        ch++;
     }
+
+    printf("Nth number of fabonaci series is %d",sum);
     
 }
