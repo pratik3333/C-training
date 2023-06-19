@@ -4,24 +4,26 @@
 #include <conio.h>
 void main()
 {
-    int no, i, count = 0,j,flag;
+    int no, i, j, flag;
     printf("Enter the number: ");
     scanf("%d", &no);
 
     for (i = 1; i <= no; i++)
-    {   flag=0;
-        for (j = 2; j <= i/2; j++)
+    {
+        flag = 0;
+        for (j = 2; j <= no / 2; j++)
         {
-            
-            if (i % j == 0)
+            if (no % i == 0)
             {
-                flag=1;
+                flag = 1;
                 break;
             }
+           
         }
-        if (flag==0)
+         if (flag == 0)
             {
-                printf("\n%d",i);
+
+                printf("\n%d", i);
             }
     }
 }
