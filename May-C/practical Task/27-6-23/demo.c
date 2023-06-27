@@ -31,15 +31,6 @@ void main()
         if (i == sum)
         {
             printf("\n%d", i);
-
-
-            
         }
     }
 }
-
-// 370
-// 371
-// 470
-// in vscode it doesnt give us 153
-// if we run in another compiler it gives 153 to ..... armstrong numbers
