@@ -4,7 +4,7 @@ void main()
 {
     int no, count, i, temp, sum, rem,k;
     printf("Enter the number\n : ");
-    scanf("%d", &k);//500
+    scanf("%d",&k);//500
 
     for (i = 10; i <=k; i++)
     {
@@ -34,3 +34,9 @@ void main()
         }
     }
 }
+
+// 370
+// 371
+// 470
+// in vscode it doesnt give us 153
+// if we run in another compiler it gives 153 to ..... armstrong numbers
