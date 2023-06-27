@@ -4,9 +4,9 @@ void main()
 {
     int no, count, i, temp, sum, rem,k;
     printf("Enter the number\n : ");
-    scanf("%d", &k);
+    scanf("%d", &k);//500
 
-    for (i = 10; i <= k; i++)
+    for (i = 10; i <=k; i++)
     {
 
         temp = i, count = 0;
@@ -26,6 +26,7 @@ void main()
             sum = sum + pow(rem, count);
             i = i / 10;
         }
+        i=temp;
 
         if (i == sum)
         {
