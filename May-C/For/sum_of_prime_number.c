@@ -4,25 +4,26 @@
 #include <conio.h>
 void main()
 {
-    int no, i, count = 0,j,flag,sum;
+    int no, i, count = 0,sum,j,primesum=0;
     printf("Enter the number: ");
     scanf("%d", &no);
 
     for (i = 1; i <= no; i++)
-    {   flag=0;
-        for (j = 2; j <= i/2; j++)
+    {  count=0;
+        for (j = 1; j <= i; j++)
         {
             
             if (i % j == 0)
             {
-                flag=1;
-                break;
+                count++;
             }
         }
-        if (flag==0)
-            {
+      if (count==2)
+      {
+        primesum=primesum+i;
 
-                printf("\n%d",i);
-            }
+      }
+      
     }
+    printf("Sum of prime numbers upto n is: %d",primesum);
 }
