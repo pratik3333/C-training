@@ -31,9 +31,6 @@ void main()
         if (i == sum)
         {
             printf("\n%d", i);
-
-
-            
         }
     }
 }
