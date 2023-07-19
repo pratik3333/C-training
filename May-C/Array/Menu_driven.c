@@ -1,7 +1,11 @@
 #include <stdio.h>
 void main()
 {
+
     int a[10], i, j, choice, index, value, flag = 0;
+
+    int a[10], i, j, choice, index, value;
+
 
     printf("\n Enter the 10 values of array: \n");
     for (i = 0; i < 8; i++)
@@ -77,6 +81,7 @@ void main()
             break;
 
         case 4:
+
             printf("\nEnter the index: \n");
             scanf("%d",&index);
             for (i = 0; i < 10; i++)
