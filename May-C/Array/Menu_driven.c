@@ -48,16 +48,16 @@ void main()
             break;
 
         case 2:
-           printf("\nEnter the value\n");
-           scanf("%d",&value);
-           a[8]=value;
+            printf("\nEnter the value\n");
+            scanf("%d", &value);
+            a[8] = value;
 
-           for ( i = 0; i <9; i++)
-           {
-            printf("%d\t",a[i]);
-           }
-           
-        break;
+            for (i = 0; i < 9; i++)
+            {
+                printf("%d\t", a[i]);
+            }
+
+            break;
 
         case 3:
 
@@ -77,8 +77,7 @@ void main()
             break;
 
         case 4:
-        printf("\nEnter ")
-        break;
+            printf("\nEnter ") break;
 
         default:
             printf("\nInvalid choice\n");
