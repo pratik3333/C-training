@@ -1,7 +1,11 @@
 #include <stdio.h>
 void main()
 {
+
+    int a[10], i, j, choice, index, value, flag = 0;
+
     int a[10], i, j, choice, index, value;
+
 
     printf("\n Enter the 10 values of array: \n");
     for (i = 0; i < 8; i++)
@@ -77,7 +81,39 @@ void main()
             break;
 
         case 4:
-            printf("\nEnter ") break;
+
+            printf("\nEnter the index: \n");
+            scanf("%d",&index);
+            for (i = 0; i < 10; i++)
+            {
+                if (i == index)
+                {
+                    flag = 1;
+                     printf("\nAfter deleting value\n");
+                    break;
+                }
+            }
+            if (flag = 1)
+            {
+                for (i = index; i < 9; i++)
+                {
+                    a[i] = a[i + 1];
+                }
+            }
+            else
+            {
+                printf("index not found");
+            }
+           
+            for (i = 0; i < 9; i++)
+            {
+                printf("%d\t", a[i]);
+            }
+            break;
+
+            case 5:
+
+            break;
 
         default:
             printf("\nInvalid choice\n");
