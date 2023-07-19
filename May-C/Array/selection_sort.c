@@ -14,7 +14,11 @@ int main()
         printf("%d\t", a[i]);
     }
     // apply selection sort algorithm
+
     for (i = 0; i < len; i++)
+
+    for (i = 0; i < (len - 1); i++)
+
     {
         min_ind = i;
         for (j = (i + 1); j < len; j++)
