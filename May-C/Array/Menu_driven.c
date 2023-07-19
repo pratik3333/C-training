@@ -2,7 +2,7 @@
 void main()
 {
 
-    int a[10], i, j, choice, index, value, flag = 0, len,min,max;
+    int a[10], i, j, choice, index, value, flag = 0, len,min,max;  
 
     printf("\n Enter the 10 values of array: \n");
     for (i = 0; i < 8; i++)
@@ -80,13 +80,15 @@ void main()
         case 4:
 
             printf("\nEnter the index: \n");
-            scanf("%d", &index);
+            scanf("%d",&index);
+
             for (i = 0; i < 10; i++)
             {
                 if (i == index)
                 {
                     flag = 1;
-                    printf("\nAfter deleting value\n");
+
+                     printf("\nAfter deleting value\n");
                     break;
                 }
             }
