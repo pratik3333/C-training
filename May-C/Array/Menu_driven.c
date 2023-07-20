@@ -127,7 +127,7 @@ printf("\n Array Elements: %d\n",count);
         case 5:
              a[count]=0;
              
-              printf("\nAfter deleting last element\n");
+              printf("\nAfter deleting last element\n"); 
               for ( i = 0; i <count; i++)
               {
                 printf("%d\t",a[i]);
