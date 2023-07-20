@@ -1,14 +1,24 @@
 #include <stdio.h>
+int c=0;
 void main()
 {
 
-    int a[10], i, j, choice, index, value, flag = 0, len,min,max;  
+    int a[10], i, j, choice, index, value, flag = 0, len,min,max,count=0,size;  
+    size=sizeof(a)/sizeof(a[0]);
 
     printf("\n Enter the 10 values of array: \n");
-    for (i = 0; i < 8; i++)
+    for (i = 0; i <size-2; i++)
     {
         scanf("%d", &a[i]);
+        ++count;
     }
+printf("\n Array Elements: %d\n",count);
+      for (i = 0; i <size-2; i++)
+    {
+        printf("%d\t",a[i]);
+
+    }
+
 
     do
     {
@@ -29,101 +39,116 @@ void main()
         switch (choice)
         {
         case 1:
+        c=0;
             printf("\nEnter the index: \n");
             scanf("%d", &index);
-            printf("\nEnter value: \n");
+            printf("\nEnter value: %d\n",count);
             scanf("%d", &value);
 
-            for (i = 9; i >= index; i--)
+            for (i = count; i >= index; i--)
             {
                 a[i + 1] = a[i];
             }
             a[index] = value;
 
-            printf("\nDisplay after operation:\n");
-            for (i = 0; i < 9; i++)
+            printf("\nDisplay after operation: %d\n",count);
+            
+            for (i = 0; i <count+1; i++)
             {
                 printf("\t%d", a[i]);
+                ++c;
+                
             }
 
             break;
 
         case 2:
-            printf("\nEnter the value\n");
+        count=c;
+        c=0;
+            printf("\nEnter the value %d===>%d\n",c,count);
             scanf("%d", &value);
-            a[8] = value;
+            a[count] = value;
+            
 
-            for (i = 0; i < 9; i++)
+            for (i = 0; i <count; i++)
             {
                 printf("%d\t", a[i]);
+                ++c;
             }
 
             break;
 
         case 3:
-
+        count=c;
+        c=0;
             printf("\nEnter the value\n");
             scanf("%d", &value);
-            for (i = 8; i >= 0; i--)
+            for (i =count; i >= 0; i--)
             {
                 a[i + 1] = a[i];
             }
             a[0] = value;
-
+            
             for (i = 0; i < 9; i++)
             {
                 printf("%d\t", a[i]);
+                ++c;
             }
 
             break;
 
         case 4:
-
+                count=c;
+                c=0;
             printf("\nEnter the index: \n");
             scanf("%d",&index);
 
-            for (i = 0; i < 10; i++)
+            for (i = index; i <=count; i++)
             {
-                if (i == index)
-                {
-                    flag = 1;
-
-                     printf("\nAfter deleting value\n");
-                    break;
-                }
+               a[i]=a[i+1];
+               flag=1;
             }
-            if (flag = 1)
+            count--;
+            if (flag)
             {
-                for (i = index; i < 9; i++)
+                for (i =0; i < count; i++)
                 {
-                    a[i] = a[i + 1];
+                   printf("%d\t",a[i]);
                 }
             }
             else
             {
                 printf("index not found");
             }
-
-            for (i = 0; i < 9; i++)
-            {
-                printf("%d\t", a[i]);
-            }
+            
+           
             break;
 
         case 5:
-            printf("\nI did not write logic for that because how we declare last array element\n");
+             a[count]=0;
+             
+              printf("\nAfter deleting last element\n");
+              for ( i = 0; i <count; i++)
+              {
+                printf("%d\t",a[i]);
+              }
+              
+            
             break;
 
         case 6:
 
-            for (i = 0; i < 9; i++)
+            for (i = 0; i <count; i++)
             {
                 a[i] = a[i + 1];
             }
+            count--;
             printf("\n After deleting element at the start of the array:\n");
-            for (i = 0; i < 9; i++)
+            
+            for (i = 0; i <count; i++)
             {
                 printf("%d\t", a[i]);
+               // ++count;
             }
 
             break;
@@ -132,7 +157,7 @@ void main()
             printf("\nEnter the value: ");
             scanf("%d", &value);
 
-            for (i = 0; i < 9; i++)
+            for (i = 0; i < count; i++)
             {
                 if (a[i] == value)
                 {
@@ -143,6 +168,7 @@ void main()
             if (flag = 1)
             {
                 printf("\nValue found");
+                // flag=0;
             }
             else
             {
@@ -151,13 +177,30 @@ void main()
             break;
 
         case 8:
-            printf("\nI don't know what to do in this case");
+            printf("\nEnter the index\n");
+            scanf("%d",&index);
+            for ( i = 0; i <count; i++)
+            {
+                if (i==index)
+                {
+                    printf("\nindex is %d and value is %d \n",i,a[i]);
+                    flag=1;
+                    break;
+                }
+                
+            }
+            if (!flag)
+            {
+                printf("\nIndex not found\n");
+                flag=0;
+            }
+
             break;
 
         case 9:
             
             max = a[0];
-            for (i = 1; i < 9; i++)
+            for (i = 1; i < count; i++)
             {
                 if (max < a[i])
                 {
@@ -171,7 +214,7 @@ void main()
         case 10:
             
             min = a[0];
-            for (i = 1; i < 9; i++)
+            for (i = 1; i < count; i++)
             {
                 if (min > a[i])
                 {
@@ -183,6 +226,7 @@ void main()
 
         default:
             printf("\nInvalid choice\n");
+            printf("\nThank you!!!\n");
             break;
         }
 
