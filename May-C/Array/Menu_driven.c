@@ -18,8 +18,7 @@ printf("\n Array Elements: %d\n",count);
         printf("%d\t",a[i]);
         ++count;
     }
-
-
+    
     do
     {
         printf("\nEnter 1 for insert element at specific index: ");
