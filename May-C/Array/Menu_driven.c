@@ -3,20 +3,20 @@ int c=0;
 void main()
 {
 
-    int a[10], i, j, choice, index, value, flag = 0, len,min,max,count=0,size;  
+    int a[10], i, j, choice, index, value, flag = 0, len,min,max,count=0,size,c;  
     size=sizeof(a)/sizeof(a[0]);
 
     printf("\n Enter the 10 values of array: \n");
     for (i = 0; i <size-2; i++)
     {
         scanf("%d", &a[i]);
-        ++count;
+        
     }
 printf("\n Array Elements: %d\n",count);
       for (i = 0; i <size-2; i++)
     {
         printf("%d\t",a[i]);
-
+        ++count;
     }
 
 
@@ -67,7 +67,7 @@ printf("\n Array Elements: %d\n",count);
         c=0;
             printf("\nEnter the value %d===>%d\n",c,count);
             scanf("%d", &value);
-            a[count] = value;
+            a[count-1] = value;
             
 
             for (i = 0; i <count; i++)
