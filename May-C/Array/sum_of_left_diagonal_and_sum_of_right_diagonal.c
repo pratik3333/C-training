@@ -1,7 +1,7 @@
 #include<stdio.h>
 void main()
 {
-    int i,j,a[3][3],sum=0;
+    int i,j,a[3][3],sum=0,sum1=0;
     for ( i = 0; i <3; i++)
     {
         for ( j = 0; j < 3; j++)
@@ -19,10 +19,16 @@ void main()
            {
             sum=sum+a[i][j];
            }
-           printf("%d\t",a[i][j]);
            
+           if (j==(2-i))
+           {
+            sum1=sum1+a[i][j];
+           }
+           
+           printf("%d\t",a[i][j]);
         }
         printf("\n");
     }
-    printf("\nSum is %d",sum);
+    printf("\nSum of left diagonal is  %d",sum);
+    printf("\nSum of right diagonal is  %d",sum1);
 }
