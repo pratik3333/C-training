@@ -1,7 +1,7 @@
 #include<stdio.h>
 void main()
 {
-    int a[3][3],i,j,count=0,c=0;
+    int a[3][3],i,j,count=0,x;
     printf("\nEnter the matrix value: \n");
     for ( i = 0; i < 3; i++)
     {
@@ -22,23 +22,52 @@ void main()
             {
                 ++count;
             }
-            else
-            {
-                ++c;
-            }
             
             printf("%d\t",a[i][j]);
         }
         printf("\n");
     }
     
-    if (count>c)
+    if (count>4)
     {
-        printf("\nMatrix is sparse matrix\n");
+        printf("\nThe given Matrix is sparse matrix\n");
     }
     else
     {
-        printf("\nMatrix is not sparse matrix\n");
+        
+        x=5-count;
+        for ( i = 0; i <3; i++)
+        {
+            for ( j = 0; j <3; j++)
+            {
+                if (a[i][j]!=0)
+                {
+                    a[i][j]=0;
+                    x--;
+                }
+                if (x==0)
+                {
+                    break;
+                }
+                
+            }
+            if (x==0)
+            {
+                break;
+            }
+            
+        }
+        
+        printf("\nSparse matrix after conversion\n");
+        for ( i = 0; i <3; i++)
+        {
+            for ( j = 0; j <3; j++)
+            {
+                printf("%d\t",a[i][j]);
+            }
+            printf("\n");
+        }
+        
     }
     
 }

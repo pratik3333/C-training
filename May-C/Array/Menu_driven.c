@@ -10,13 +10,14 @@ void main()
     for (i = 0; i <size-2; i++)
     {
         scanf("%d", &a[i]);
+        ++count;
         
     }
 printf("\n Array Elements: %d\n",count);
       for (i = 0; i <size-2; i++)
     {
         printf("%d\t",a[i]);
-        ++count;
+        // ++count;
     }
     
     do
@@ -52,7 +53,7 @@ printf("\n Array Elements: %d\n",count);
 
             printf("\nDisplay after operation: %d\n",count);
             
-            for (i = 0; i <count+1; i++)
+            for (i = 0; i <=count; i++)
             {
                 printf("\t%d", a[i]);
                 ++c;
@@ -66,10 +67,10 @@ printf("\n Array Elements: %d\n",count);
         c=0;
             printf("\nEnter the value %d===>%d\n",c,count);
             scanf("%d", &value);
-            a[count-1] = value;
+            a[count] = value;
             
 
-            for (i = 0; i <count; i++)
+            for (i = 0; i <=count; i++)
             {
                 printf("%d\t", a[i]);
                 ++c;
