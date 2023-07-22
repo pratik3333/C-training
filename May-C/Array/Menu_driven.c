@@ -120,8 +120,6 @@ printf("\n Array Elements: %d\n",count);
             {
                 printf("index not found");
             }
-            
-           
             break;
 
         case 5:
