@@ -1,7 +1,7 @@
 #include<stdio.h>
 void main()
 {
-    int a[5],i,j,temp,len;
+    int a[5],i,j,temp,len,diff;
     len=sizeof(a)/sizeof(a[0]);
     printf("Enter five values of array: ");
     for ( i = 0; i < 5; i++)
@@ -32,6 +32,20 @@ void main()
     }
     
     // missing elements
-    printf("\n\nPrinting missing elements\n");
+    printf("\n\nmissing elements are:- \n");
+    for ( i = 0; i <5; i++)
+    {
+        diff=a[i+1]-a[i];
+        if (diff>1)
+        {
+            for ( j =a[i]; j <a[i+1]-1; )
+            {
+                printf("%d\t",++j);
+            }
+            
+        }
+        
+    }
+    
     
 }
