@@ -26,7 +26,7 @@ void main()
     printf("\n\nDisplay array values: ");
     for ( i = 0; i <5; i++)
     {
-        printf("%d\t",*b[i]);
+        printf("\t%d",*b[i]);
     }
     
     
