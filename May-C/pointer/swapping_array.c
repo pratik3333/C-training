@@ -16,6 +16,7 @@ void main()
         scanf("%d",&b[i]);
     }
 
+
     for ( i = 0; i < 5; i++)
     {
         c[i]=&a[i];
