@@ -29,12 +29,12 @@ void main()
     {
         if (a[i]%2==0)
         {
-            b[i]=a[i];
+            b[i]=&a[i];
             // ++count;
         }
         else
         {
-            c[i]=a[i];
+            c[i]=&a[i];
             // ++c1;
         }
         
