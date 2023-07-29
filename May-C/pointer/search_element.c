@@ -31,7 +31,7 @@ void main()
         }
         
     }
-    if (flag==1)
+    if (flag)
     {
         printf("\nElement found");
     }
