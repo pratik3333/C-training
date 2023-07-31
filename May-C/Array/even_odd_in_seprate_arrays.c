@@ -1,7 +1,7 @@
 #include<stdio.h>
 void main()
 {
-    int a[5],b[5],c[5],i,count=1,count1=1;
+    int a[5],b[5],c[5],i;
     int j=0,k=0;
 
     printf("\nEnter five values in array\n");
