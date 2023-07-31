@@ -1,7 +1,7 @@
 #include<stdio.h>
 void main()
 {
-    int a[5],i,j,sum,gsum,flag=0;
+    int a[5],i,j,sum,gsum,flag=0,x;
     printf("\nEnter five values of array's: \n");
     for ( i = 0; i <5; i++)
     {
@@ -12,13 +12,15 @@ void main()
     scanf("%d",&gsum);
 
 
-
+    
+    x=a[i]+a[j];
+     
     for ( i = 0; i <5; i++)
     {
-        sum=0;
+        
         for ( j =i+1; i <5; i++)
         {
-            if (a[i]+a[j]==gsum)
+            if (x==gsum)
             {
                 flag=1;
                 break;
