@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 void main()
 {
     void duck(no);
@@ -89,6 +90,7 @@ void armstrong(no)
         {
             p = p * rem;
         }
+        // p=pow(rem,count);
         sum = sum + p;
     }
 
