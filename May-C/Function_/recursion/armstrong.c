@@ -40,7 +40,6 @@ int armstrong( int no)
     
 }
 
-
 void main()
 {
    // int no;
