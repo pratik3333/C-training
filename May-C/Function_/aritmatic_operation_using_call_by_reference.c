@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<math.h>
 int res=0;
 
 int getsum(int *x, int *y)
@@ -15,13 +16,15 @@ int substraction(int *x, int *y)
 
 int getmultiplication(int *x, int *y)
 {
+    *x=20;
+    *y=10;
     res=(*x) * (*y);
     return res;
 }
 
 int getDivision(int *x,int *y)
 {
-    res=*x / *y;
+    res=(float)*x / (float)*y;
     return res;
 }
 void main()
@@ -36,12 +39,15 @@ void main()
     int subresult = substraction(&a,&b);
    printf("\nSubstraction is %d",subresult);
 
-   int mulresult = getmultiplication(&a,&b);
-   printf("\nMultiplication is %d",mulresult);
-
    int divresult = getDivision(&a,&b);
    printf("\nDivision is %d",divresult);
 
+   printf("\n%d %d",a,b);
+
+   int mulresult = getmultiplication(&a,&b);
+   printf("\nMultiplication is %d",mulresult);
+
+    printf("\n%d %d",a,b);
    
 
 }
