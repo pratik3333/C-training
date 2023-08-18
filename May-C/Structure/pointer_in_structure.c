@@ -1,4 +1,4 @@
-#include<iostream>
+
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -13,8 +13,8 @@ struct product *p;
 
 int main()
 {
-    p=(struct product*)malloc(sizeof(product));
-    printf("\nEnter product name, id and price;");
+    p=(struct product*)malloc(sizeof(struct product));
+    printf("\nEnter product name, id and price\n;");
     scanf("%s %d %d",&p->name,&p->id,&p->price);
     printf("\nName is %s",p->name);
     printf("\nid is %d",p->id);
