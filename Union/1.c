@@ -7,7 +7,7 @@ union Student
     char name[90];
 };
 
-union Student s1();
+union Student s1;
 void main()
 {
     int choice;
@@ -37,10 +37,10 @@ void main()
     } while (choice!=3);
 }
 
-union Student s1
-{
-    int name,per;
-    printf("\nEnter either percentage or name\n");
-    scanf("%s%d",&s1.name,&s1.per);
+// union Student
+// {
+//     int name,per;
+//     printf("\nEnter either percentage or name\n");
+//     scanf("%s%d",&s1.name,&s1.per);
 
-};
+// };
