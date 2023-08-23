@@ -180,6 +180,7 @@ void arrange()
             }
         }
     }
+    
     printf("\nDisplay values in file\n");
     for (i = 0; i < count; i++)
     {
