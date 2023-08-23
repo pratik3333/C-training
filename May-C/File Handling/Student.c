@@ -77,16 +77,42 @@ void view()
 
 void arrange()
 {
-    FILE *fptr;
-    int count=0,i=0;
-    fptr=fopen("H:\\C-training\\May-C\\File Handling\\Student.txt", "r");
-    while (fscanf(fptr,"%s%d%d",&std.name,&std.id,&std.fees) !=EOF)
-    {
-         count++;
-    }
-    fclose(fptr);
-
-    struct Student std = (struct Student )malloc(count*sizeof(struct Student));
+    
+	FILE *fptr;
+	fptr=fopen("H:\\C-training\\May-C\\File Handling\\Student.txt","r");
+	
+	int count=0,i=0;
+	  
+	  while(fscanf(fptr,"%s\t%d\t%d\n",&std.name,&std.id,&std.fees)!=EOF)
+	  {
+	  	count++;
+	  }
+	  fclose(fptr);
+	 struct student std=(struct student)malloc(count *sizeof(struct student));
+	  fptr=fopen("H:\\C-training\\May-C\\File Handling\\Student.txt","r");
+	  while(fscanf(fptr,"%s\t%d\t%d\n",&std[i].name,&std[i].id,&std[i].fees)!=EOF)
+	  {
+	  	i++;
+	  }
+	fclose(fptr);
+	for(i=0;i<count-1;i++)
+	{
+		for(int j=i+1;j<(count);j++)
+		{
+			if(std[i].fees<std[j].fees)
+			{
+			struct student temp=std[i];
+			std[i]=s1[j];
+			std[j]=temp;
+		}
+		}
+	}
+	printf("Display Result\n");
+	for(i=0;i<count;i++)
+	{
+		printf("%s\t:%d\t:%d\n",std[i].name,std[i].id,std[i].fees);
+	}
+	fclose(fptr);
 }
 
 void search()
