@@ -48,7 +48,7 @@ void main()
             break;
         }
 
-    } while (choice > 0 && choice < 5);
+    } while (choice < 5);
 }
 
 void insert()
