@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include "insertpro.h"
 #include <stdlib.h>
-struct product *p1;
+struct product p;
 int size, i;
-int choice;
+
 void main()
 {
-
+    int choice;
     do
     {
         printf("\n1:Insert");
@@ -14,6 +14,7 @@ void main()
         printf("\n3:Search");
         printf("\n\n Enter choice\n");
         scanf("%d", &choice);
+        struct product *pro;
 
         switch (choice)
         {
@@ -21,20 +22,21 @@ void main()
 
             printf("\nEnter how many items you want to add: ");
             scanf("%d", &size);
-            for (int i = 0; i < size; i++)
+            for (i = 0; i < size; i++)
             {
-                printf("\nEnter item name, id and weight: ");
+                printf("\nEnter product name, id and weight: ");
                 _flushall();
-                gets(p1[i].name);
-                scanf("%d%d", &p1[i].id, &p1[i].price);
-                addproduct (p1[i]);
+                gets(pro[i].name);
+                scanf("%d%d", &pro[i].id, &pro[i].price);
+                addproduct (pro[i]);
             }
 
             break;
-        case 2:
+        // case 2:
 
-            break;
+        //     break;
         default:
+        printf("\nInvalid Input\n");
             break;
         }
     } while (choice < 4);
