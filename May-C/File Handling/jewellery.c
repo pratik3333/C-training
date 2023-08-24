@@ -13,6 +13,7 @@ void Insert();
 void View();
 void Search();
 void arrange();
+void update();
 int choice, count;
 FILE *fptr;
 void main()
@@ -24,12 +25,14 @@ void main()
         printf("\n2:View with price");
         printf("\n3:Search");
         printf("\n4:arrange");
+        printf("\n5:Update");
         printf("\nEnter choice: ");
         scanf("%d", &choice);
 
         switch (choice)
         {
         case 1:
+            _flushall();
             Insert();
             break;
         case 2:
@@ -43,12 +46,15 @@ void main()
         case 4:
             arrange();
             break;
+        case 5:
+            update();
+            break;
 
         default:
             printf("\nInvalid Input\n");
             break;
         }
-    } while (choice < 5);
+    } while (choice < 6);
 }
 
 void Insert()
@@ -59,11 +65,12 @@ void Insert()
 
     for (int i = 0; i < count; i++)
     {
+
         printf("\nEnter item name, id and weight: ");
         _flushall();
         gets(jew.item);
         scanf("%d %f", &jew.id, &jew.weight);
-        fprintf(fptr, "%s\t%d\t%f\n", jew.item, jew.id, jew.weight);
+        fprintf(fptr, "\n%s\t%d\t%f", jew.item, jew.id, jew.weight);
         printf("\n%d:-Data save...", i + 1);
     }
     fclose(fptr);
@@ -72,16 +79,16 @@ void Insert()
 void View()
 {
     fptr = fopen("H:\\C-training\\May-C\\File Handling\\jewellerydata.txt", "r");
-    if (fscanf(fptr, "%s%d%f", &jew.item, &jew.id, &jew.weight) == EOF)
+    if (fscanf(fptr,"%s%d%f", &jew.item, &jew.id, &jew.weight) == EOF)
     {
         printf("\nThere is no data\n");
     }
     else
     {
-        while (fscanf(fptr, "%s%d%f", &jew.item, &jew.id, &jew.weight) != EOF)
-        {
-            printf("%s\t%d\t%f\n", jew.item, jew.id, jew.weight);
-        }
+    while (fscanf(fptr,"%s%d%f", &jew.item,&jew.id, &jew.weight) != EOF)
+    {
+        printf("%s\t%d\t%f\n", jew.item, jew.id, jew.weight);
+    }
     }
 
     fclose(fptr);
@@ -180,10 +187,75 @@ void arrange()
             }
         }
     }
-    
+
     printf("\nDisplay values in file\n");
     for (i = 0; i < count; i++)
     {
         printf("\n%s\t%d\t%f", d1[i].item, d1[i].id, d1[i].weight);
     }
+}
+void update()
+{
+    int flag = 0;
+    fptr = fopen("H:\\C-training\\May-C\\File Handling\\jewellerydata.txt", "r+");
+    printf("\nEnter id on which data you want to update:\n");
+    int uid;
+    scanf("%d", &uid);
+
+    while (fscanf(fptr, "%s%d%f", &jew.item, &jew.id, &jew.weight) != EOF)
+    {
+        if (uid == jew.id)
+        {
+            flag = 1;
+            break;
+        }
+    }
+    
+    if (flag)
+    {
+       
+        printf("\n1:name update:\n");
+        printf("\n2:weight update:\n");
+        _flushall();
+        int choice;
+        printf("\nEnter choice:\n");
+        scanf("%d", &choice);
+
+        switch (choice)
+        {
+        case 1:
+            _flushall();
+            fptr = fopen("H:\\C-training\\May-C\\File Handling\\jewellerydata.txt", "r+");
+            printf("\nEnter new name: \n");
+            char ch[20];
+            printf("\n%s",jew.item);
+            gets(ch);
+            strcpy(jew.item,ch);
+            fprintf(fptr,"%s",jew.item);
+            printf("\nUpdated");
+            fclose(fptr);
+            break;
+        case 2:
+           
+            fptr = fopen("H:\\C-training\\May-C\\File Handling\\jewellerydata.txt", "r+");
+            //  _flushall();
+            float wei;
+            printf("\nEnter new weight: \n");
+            scanf("%f", &wei);
+            jew.weight = wei;
+            fprintf(fptr,"%s\t%d\t%f",jew.item,jew.id,jew.weight);
+            printf("\nUpdated");
+            fclose(fptr);
+            break;
+        default:
+            printf("\nInvalid Input\n");
+            break;
+        }
+    }
+    else
+    {
+        printf("\nID not found\n");
+    }
+
+    fclose(fptr);
 }
