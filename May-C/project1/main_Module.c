@@ -31,7 +31,7 @@ int main()
                 gets(p1[i].name);
                 scanf("%d%d", &p1[i].id, &p1[i].price);
                 addproduct(p1[i]);
-                // printf("\n%d:-Data save...", i + 1);
+                
             }
             // fclose(fptr);
             break;
