@@ -7,6 +7,7 @@ int size, i;
 void main()
 {
     int choice;
+    
     do
     {
         printf("\n1:Insert");
