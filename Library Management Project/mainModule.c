@@ -41,7 +41,6 @@ int main()
 				scanf("%d%d%d%d", &b1[i].bookQuantity, &b1[i].bookPrice, &b1[i].bookCount, &b1[i].bookRackno);
 				AddBook(b1[i]);
 			}
-			// test ();
 			break;
 		// case 2:
 		// break;
