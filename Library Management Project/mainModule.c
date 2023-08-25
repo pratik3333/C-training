@@ -2,8 +2,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include "AddBook.h"
-// #include "test.h"
-// #include "SearchBook.h"
+#include "SearchBook.h"
 #include "ViewBookList.h"
 
 struct struAddBook b;
@@ -46,11 +45,11 @@ int main()
 		// break;
 		// case 3:
 		// break;
-		// case 4:
-		// 	printf("Enter Id for search the Book :");
-		// 	scanf("%d",&sid);
-		// 	searchBook(sid);
-		// break;
+		case 4:
+			// printf("Enter Id for search the Book :");
+			// scanf("%d",&sid);
+			searchBook(sid);
+		break;
 		case 5:
 			viewBookList();
 			break;
