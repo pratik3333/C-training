@@ -14,7 +14,13 @@ int choice, size, sid, i;
 
 int main()
 {
-    int result = login();
+    int result;
+	do
+	{
+		/* code */
+	
+	
+	result=login();
     if (result == 1)
     {
 
@@ -59,7 +65,8 @@ int main()
                 issueBooks();
                 break;
             case 5:
-                viewBookList()=-098                break;
+                viewBookList();
+				                break;
             // case 6:
             // break;
 			case 7:
@@ -75,7 +82,8 @@ int main()
     else
     {
         printf("\nEnter valid login ID");
-        login();
+        
     }
+	} while (1);
     
 }

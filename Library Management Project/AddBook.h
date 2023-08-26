@@ -18,7 +18,8 @@ void AddBook(struct struAddBook b)
    {
    case 1:
       fptr = fopen("H:\\C-training\\Library Management Project\\Computer.txt", "a+");
-      fprintf(fptr, "%d\t%s\t%s\t%d\t%d\t%d\t%d\n", b.bookId, b.bookname, b.authorName, b.bookQuantity, b.bookPrice, b.bookCount, b.bookRackno);
+      //fprintf(fptr, "%d\%s\%s\%d\%d\%d\%d\n", b.bookId, b.bookname, b.authorName, b.bookQuantity, b.bookPrice, b.bookCount, b.bookRackno);
+      fwrite(&b,sizeof(struct struAddBook),1,fptr);
       fclose(fptr) ;
       printf("\nBook added Succesfully\n");
       break;
