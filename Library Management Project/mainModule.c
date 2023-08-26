@@ -59,10 +59,13 @@ int main()
                 issueBooks();
                 break;
             case 5:
-                viewBookList();
-                break;
+                viewBookList()=-098                break;
             // case 6:
             // break;
+			case 7:
+			printf("Closed....");
+			exit(0);
+			break;
             default:
                 printf("Invalid Input ...");
                 break;

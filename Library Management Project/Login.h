@@ -13,8 +13,6 @@ int login()
     int ch;
     while (1)
     {
-        printf("____code Express___\n");
-        printf("__Welcome here__\n");
         printf("Enter 1 for login \n");
         printf("Enter 2 for exit \n");
         printf("Enter your choice : ");
@@ -45,11 +43,13 @@ int login()
             }
             else
             {
+                _flushall();
                 return 0;
             }
             break;
         case 2:
         printf("\nThank You\n Visit Again.....");
+
             exit(0);
             break;
         }
