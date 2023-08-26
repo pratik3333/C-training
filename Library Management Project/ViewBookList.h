@@ -1,3 +1,18 @@
+void viewBookList123()
+{
+	FILE *fptr;
+	struct struAddBook b;
+
+	printf("\n\t\t\tComputer Department\n\n");
+
+	fptr = fopen("H:\\C-training\\Library Management Project\\ComputerCopy.txt", "a+");
+
+	while (fread(&b,sizeof(struct struAddBook),1,fptr))
+	{
+		printf("%d\t%s\t%s\t%d\t%d\t%d\t%d\n", b.bookId, b.bookname, b.authorName, b.bookQuantity, b.bookPrice, b.bookCount, b.bookRackno);
+	}
+	fclose(fptr);
+}
 
 void viewBookList()
 {
@@ -8,7 +23,7 @@ void viewBookList()
 
 	fptr = fopen("H:\\C-training\\Library Management Project\\Computer.txt", "a+");
 
-	while (fscanf(fptr, "%d\t%s\t%s\t%d\t%d\t%d\t%d\n", &b.bookId, &b.bookname, &b.authorName, &b.bookQuantity, &b.bookPrice, &b.bookCount, &b.bookRackno) != EOF)
+	while (fread(&b,sizeof(struct struAddBook),1,fptr))
 	{
 		printf("%d\t%s\t%s\t%d\t%d\t%d\t%d\n", b.bookId, b.bookname, b.authorName, b.bookQuantity, b.bookPrice, b.bookCount, b.bookRackno);
 	}
