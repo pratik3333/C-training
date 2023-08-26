@@ -7,6 +7,7 @@
 #include "IssueBook.h"
 #include "DeleteBook.h"
 #include "Login.h"
+#include "UpdateBook.h"
 // #include "Computer.txt"
 
 struct struAddBook b;
@@ -65,8 +66,9 @@ int main()
             case 5:
                 viewBookList();
 				                break;
-            // case 6:
-            // break;
+            case 6:
+            UpdateBook();
+            break;
 			case 7:
 			printf("Closed....");
 			exit(0);
