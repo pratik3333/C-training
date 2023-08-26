@@ -207,10 +207,12 @@ void update()
         if (uid == jew.id)
         {
             flag = 1;
+            fseek
+            fprintf(fptr,"%s%d%f","xx",jew.id,999);
             break;
         }
     }
-    
+    /*
     if (flag)
     {
        
@@ -256,6 +258,6 @@ void update()
     {
         printf("\nID not found\n");
     }
-
+*/
     fclose(fptr);
 }
