@@ -4,6 +4,8 @@
 #include "AddBook.h"
 #include "SearchBook.h"
 #include "ViewBookList.h"
+#include "IssueBook.h"
+
 
 struct struAddBook b;
 int choice, size, sid, i;
@@ -14,8 +16,8 @@ int main()
 	{
 		printf("\n1 : Add Book : ");
 		printf("\n2 : Delete Book : ");
-		printf("\n3 : Issue Book : ");
-		printf("\n4 : Search Book : ");
+		printf("\n3 : Search Book : ");
+		printf("\n4 : Issue Book : ");
 		printf("\n5 : View Book List : ");
 		printf("\n6 : Edit Book Record : ");
 		printf("\n7 : Close The Application : ");
@@ -43,12 +45,12 @@ int main()
 			break;
 		// case 2:
 		// break;
-		// case 3:
-		// break;
+		case 3:
+		searchBook(sid);
+		break;
 		case 4:
-			// printf("Enter Id for search the Book :");
-			// scanf("%d",&sid);
-			searchBook(sid);
+			issueBooks();
+			
 		break;
 		case 5:
 			viewBookList();

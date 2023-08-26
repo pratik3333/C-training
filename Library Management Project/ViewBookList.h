@@ -4,7 +4,7 @@ void viewBookList()
 	FILE *fptr;
 	struct struAddBook b;
 
-	printf("\n\t\t\tComputer Department\n");
+	printf("\n\t\t\tComputer Department\n\n");
 
 	fptr = fopen("H:\\C-training\\Library Management Project\\Computer.txt", "a+");
 
@@ -14,7 +14,7 @@ void viewBookList()
 	}
 	fclose(fptr);
 	// ////////////////////////////////////////////////////////////////////////////////////////
-	printf("\n\t\t\tElectrical Department\n");
+	printf("\n\t\t\tElectrical Department\n\n");
 
 	fptr = fopen("H:\\C-training\\Library Management Project\\Electrical.txt", "a+");
 
@@ -26,7 +26,7 @@ void viewBookList()
 
 	// ////////////////////////////////////////////////////////////////////////////////////
 
-	printf("\n\t\t\tCivil Department\n");
+	printf("\n\t\t\tCivil Department\n\n");
 
 	fptr = fopen("H:\\C-training\\Library Management Project\\Civil.txt", "a+");
 
@@ -38,7 +38,7 @@ void viewBookList()
 
 	// ////////////////////////////////////////////////////////////////////////////////////
 
-	printf("\n\t\t\tElectronics Department\n");
+	printf("\n\t\t\tElectronics Department\n\n");
 
 	fptr = fopen("H:\\C-training\\Library Management Project\\Electronics.txt", "a+");
 
@@ -49,7 +49,7 @@ void viewBookList()
 	fclose(fptr);
 
 	// ////////////////////////////////////////////////////////////////////////////////////
-	printf("\n\t\t\tMechanical Department\n");
+	printf("\n\t\t\tMechanical Department\n\n");
 
 	fptr = fopen("H:\\C-training\\Library Management Project\\Mechanical.txt", "a+");
 
@@ -60,7 +60,7 @@ void viewBookList()
 	fclose(fptr);
 
 	// ////////////////////////////////////////////////////////////////////////////////////
-	printf("\n\t\t\tArchitecture Department\n");
+	printf("\n\t\t\tArchitecture Department\n\n");
 
 	fptr = fopen("H:\\C-training\\Library Management Project\\Architecture.txt", "a+");
 

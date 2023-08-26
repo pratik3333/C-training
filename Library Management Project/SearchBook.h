@@ -34,11 +34,11 @@ void searchBook(int sid)
         if (flag)
         {
             printf("%d\t%s\t%s\t%d\t%d\t%d\t%d\n", b.bookId, b.bookname, b.authorName, b.bookQuantity, b.bookPrice, b.bookCount, b.bookRackno);
-            printf("\n Book is found...");
+            printf("\n Book found...");
         }
         else
         {
-            printf("\n Book is Not found... ");
+            printf("\n Book Not found... ");
         }
         break;
     case 2:
@@ -59,7 +59,7 @@ void searchBook(int sid)
         }
         else
         {
-            printf("\n Book is Not found... ");
+            printf("\n Book Not found... ");
         }
         break;
 
@@ -81,7 +81,7 @@ void searchBook(int sid)
         }
         else
         {
-            printf("\n Book is Not found... ");
+            printf("\n Book Not found... ");
         }
         break;
 
@@ -103,7 +103,7 @@ void searchBook(int sid)
         }
         else
         {
-            printf("\n Book is Not found... ");
+            printf("\n Book Not found... ");
         }
         break;
 
@@ -125,7 +125,7 @@ void searchBook(int sid)
         }
         else
         {
-            printf("\n Book is Not found... ");
+            printf("\n Book Not found... ");
         }
         break;
         
@@ -147,7 +147,7 @@ void searchBook(int sid)
         }
         else
         {
-            printf("\n Book is Not found... ");
+            printf("\n Book Not found... ");
         }
         break;
     default:
