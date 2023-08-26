@@ -17,9 +17,6 @@ int main()
     int result;
 	do
 	{
-		/* code */
-	
-	
 	result=login();
     if (result == 1)
     {
@@ -40,6 +37,7 @@ int main()
             switch (choice)
             {
             case 1:
+            _flushall();
                 printf("\nEnter how many books you want to add: \n");
                 scanf("%d", &size);
                 b1 = (struct struAddBook *)malloc(sizeof(struct struAddBook) * size);
